@@ -418,7 +418,7 @@ def footer():
         <div class="footer">
             <div>🌿 <b>ANGGRIZ FRUIT AI STUDIO</b></div>
             Made with care by Anggriz Hanaz Salsabil<br>
-            Proyek UAS Praktikum Pemrograman Big Data
+            Proyek UTS Praktikum Pemrograman Big Data
             <br>Universitas Syiah Kuala
         </div>
         """,
@@ -446,7 +446,7 @@ def halaman_awal():
     hero_section(
         "WELCOME TO YOUR LITTLE FRUIT LAB",
         "Kenali Buah, dengan Cara yang Lebih Cerdas.",
-        "Dashboard AI untuk mendeteksi dan mengklasifikasikan "
+        "Dashboard untuk mendeteksi dan mengklasifikasikan "
         "buah apel dan tomat melalui teknologi YOLO dan CNN.",
         "🍎 🍅"
     )
