@@ -16,7 +16,7 @@ import html
 # 1. KONFIGURASI HALAMAN
 # ==================================================
 st.set_page_config(
-    page_title="Anggriz | Fruit AI Studio",
+    page_title="Anggriz | Fruit Studio",
     page_icon="🍏",
     layout="wide",
     initial_sidebar_state="expanded"
@@ -404,7 +404,7 @@ def hero_section(eyebrow, title, description, art="🍏 🍅"):
             <div class="hero">
                 <div class="hero-art">{art}</div>
                 <p style="text-align:center;font-weight:800;">
-                    Fresh fruit, smart AI 🌿
+                    Fresh fruit, smart🌿
                 </p>
             </div>
             """,
@@ -416,7 +416,7 @@ def footer():
     st.markdown(
         """
         <div class="footer">
-            <div>🌿 <b>ANGGRIZ FRUIT AI STUDIO</b></div>
+            <div>🌿 <b>ANGGRIZ FRUIT STUDIO</b></div>
             Made with care by Anggriz Hanaz Salsabil<br>
             Proyek UTS Praktikum Pemrograman Big Data
             <br>Universitas Syiah Kuala
@@ -521,7 +521,7 @@ def halaman_registrasi():
     hero_section(
         "ONE LITTLE STEP",
         "Sebelum Mulai, Kenalan Dulu! 🌱",
-        "Isi identitas singkatmu untuk masuk ke Fruit AI Studio.",
+        "Isi identitas singkatmu untuk masuk ke Fruit Studio.",
         "🌿"
     )
 
@@ -584,7 +584,7 @@ def halaman_main():
             use_container_width=True
         )
 
-    st.sidebar.markdown("## 🍃 Fruit AI Studio")
+    st.sidebar.markdown("## 🍃 Fruit Studio")
     st.sidebar.caption("Your little fruit laboratory")
 
     menu = st.sidebar.radio(
@@ -603,9 +603,9 @@ def halaman_main():
 
     # Hero
     hero_section(
-        "YOUR AI WORKSPACE",
+        "YOUR WORKSPACE",
         "Let's Explore Your Fruits! 🍎",
-        "Unggah gambar buah dan biarkan AI membantu "
+        "Unggah gambar buah dan biarkan membantu "
         "mengenali objek atau menentukan kategori buah.",
         "🍏"
     )
@@ -675,7 +675,7 @@ def halaman_main():
             with col2:
                 st.error("Model YOLO belum tersedia.")
         else:
-            with st.spinner("🌿 AI sedang mencari objek..."):
+            with st.spinner("🌿 sedang mencari objek..."):
                 results = yolo_model(np.array(img), verbose=False)
                 result = results[0]
                 boxes = result.boxes
@@ -936,7 +936,7 @@ def halaman_feedback():
     hero_section(
         "YOUR VOICE MATTERS",
         "Ceritakan Pengalamanmu! 💌",
-        "Masukanmu membantu kami membuat Fruit AI Studio "
+        "Masukanmu membantu kami membuat Fruit Studio "
         "menjadi lebih nyaman dan bermanfaat.",
         "🌷"
     )
